@@ -1,0 +1,9 @@
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "J3i-Bo-ZnE"; */
+"J3i-Bo-ZnE.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Profil"; ObjectID = "qW2-PW-7vA"; */
+"qW2-PW-7vA.title" = "Profil";
+
+/* Class = "UINavigationItem"; title = "Headline"; ObjectID = "qxk-za-mvY"; */
+"qxk-za-mvY.title" = "Headline";

@@ -48,6 +48,7 @@
 		23DF4F111A78EFCF0059870C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		23DF4F121A78EFCF0059870C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		23DF4F131A79001F0059870C /* functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = functions.swift; sourceTree = "<group>"; };
+		23F397741ADC18F300E6780C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +186,7 @@
 				TargetAttributes = {
 					23DF4ED41A7444510059870C = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 3P4SCDHC5E;
 					};
 					23DF4EE91A7444510059870C = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -270,6 +272,7 @@
 			children = (
 				23DF4EDF1A7444510059870C /* Base */,
 				23DF4F101A78EFCF0059870C /* de */,
+				23F397741ADC18F300E6780C /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = smap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -389,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = smap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
