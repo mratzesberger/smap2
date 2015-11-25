@@ -19,7 +19,7 @@ class cl_DBModel{
     private static let Instance: cl_DBModel = cl_DBModel()
     
     private var user : cl_UserModel = cl_UserModel()
-    private var servcieURLs = "https://af.ssl-secured-server.de/WebContent/service/Service.php?method=createUserbyDeviceId"
+    private var servcieURLs = "https://af.ssl-secured-server.de/WebContent/service/TaskService.php?method=GetUserData"
 //    private var servcieURL = "http://af.mara-consulting.de/WebContent/service/Service.php?method=createUserbyDeviceId"
     private var request : NSMutableURLRequest = NSMutableURLRequest()
     
@@ -78,10 +78,19 @@ class cl_DBModel{
 //            
 //        })
         
-        let url = self.servcieURLs + "&DeviceId=" + user.DeviceId
+        let url = self.servcieURLs
 
+        let parameters:[String : String] = [
+            "DeviceId": user.DeviceId,
+            "DeviceName": user.DeviceName,
+            "DeviceModel": user.DeviceModel,
+            "DeviceLocModel": user.DeviceLocModel,
+            "DeviceSysName": user.DeviceSysName,
+            "DeviceSysVersion": user.DeviceSysVersion
+        ]
+//        let parameters = [user.DeviceId,user.DeviceName,user.DeviceModel,user.DeviceLocModel,user.DeviceSysName,user.DeviceSysVersion]
         
-        Alamofire.request(.GET, url, parameters: nil, encoding: .JSON)
+        Alamofire.request(.POST, url, parameters: parameters, encoding: Alamofire.ParameterEncoding.URL)
             .responseJSON { response in
                 if(response.result.isFailure) {
                     NSLog("Error: \(response.result.value)")
@@ -90,7 +99,8 @@ class cl_DBModel{
                 else {
                     NSLog("Success: \(url)")
                     var json_res = JSON(response.result.value!)
-                    var test3 = json_res["success"].string
+                    var test3 = json_res["UserId"].uIntValue
+                    var test5 = json_res["Input"].array
                     var test4 = json_res["success"].string
             }
         }
