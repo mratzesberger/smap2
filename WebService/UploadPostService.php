@@ -15,13 +15,14 @@ class UploadPost {
 			exit;
 		}
 		
-		$return['parameter_test'] = $_POST;
-		$return['file_test'] = $_FILES;
+// 		$return['parameter_test'] = $_POST;
+// 		$return['file_test'] = $_FILES;
 		
 		// Get Type Id for Type Name
 		$TypeId = getTypeId('post');
 		$ParentId = $_POST['ParentId'];
 		$userId = $_POST['UserId'];
+		$orientation = $_POST['orientation'];
 		
 // 		if(!$ParentId || !$userId){
 // 			return $return;
@@ -55,6 +56,8 @@ class UploadPost {
 				$return['success'] = file_put_contents($imageName, $data);
 				
 				// Resize and save
+// 				$img   = imagecreatefromjpeg($imageName);
+// 				$return['success'] = file_put_contents($imageName, $img);
 // 				$image->resizeToWidth(1024);
 // 				$image->save('upload/'.$imageName);
 
@@ -64,12 +67,6 @@ class UploadPost {
 				InsertPropertyValue($NewAppId, $PropertyId, $value, $userId);
 		
 		}
-		
-
-// 		$image = new ImageConverter(); 
-// 		$image->load($_FILES['file']['tmp_name']); 
-// 		$image->resizeToWidth(1024); 
-// 		$image->save('upload/picture3');
 
 
 		return  $return;

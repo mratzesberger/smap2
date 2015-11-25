@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.14.2
+-- version 4.1.13
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Erstellungszeit: 04. Jan 2015 um 23:01
+-- Host: mysql.goneo.de
+-- Erstellungszeit: 01. Mai 2014 um 14:55
 -- Server Version: 5.1.73
--- PHP-Version: 5.5.18
+-- PHP-Version: 5.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 --
@@ -17,10 +19,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `d03_application_hier`
+-- Tabellenstruktur für Tabelle `af_d02_application_hier`
 --
 
-CREATE TABLE IF NOT EXISTS `d03_application_hier` (
+CREATE TABLE IF NOT EXISTS `af_d02_application_hier` (
   `object_id` int(11) NOT NULL AUTO_INCREMENT,
   `parent_id` int(11) DEFAULT NULL,
   `type_id` int(11) DEFAULT NULL,
@@ -29,15 +31,15 @@ CREATE TABLE IF NOT EXISTS `d03_application_hier` (
   `change_user_id` int(11) NOT NULL,
   `change_datetime` datetime NOT NULL,
   PRIMARY KEY (`object_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4313 ;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `d03_descriptions`
+-- Tabellenstruktur für Tabelle `af_d02_descriptions`
 --
 
-CREATE TABLE IF NOT EXISTS `d03_descriptions` (
+CREATE TABLE IF NOT EXISTS `af_d02_descriptions` (
   `descr_id` int(11) NOT NULL AUTO_INCREMENT,
   `langu` int(11) NOT NULL,
   `description` text NOT NULL,
@@ -47,10 +49,10 @@ CREATE TABLE IF NOT EXISTS `d03_descriptions` (
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `d03_object_property_values`
+-- Tabellenstruktur für Tabelle `af_d02_object_property_values`
 --
 
-CREATE TABLE IF NOT EXISTS `d03_object_property_values` (
+CREATE TABLE IF NOT EXISTS `af_d02_object_property_values` (
   `property_id` int(11) NOT NULL,
   `object_id` int(11) NOT NULL,
   `value` varchar(1024) NOT NULL,
@@ -67,22 +69,34 @@ CREATE TABLE IF NOT EXISTS `d03_object_property_values` (
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `d03_object_type`
+-- Tabellenstruktur für Tabelle `af_d02_object_type`
 --
 
-CREATE TABLE IF NOT EXISTS `d03_object_type` (
+CREATE TABLE IF NOT EXISTS `af_d02_object_type` (
   `type_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   PRIMARY KEY (`type_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `d03_type_properties`
+-- Tabellenstruktur für Tabelle `af_d02_properties`
 --
 
-CREATE TABLE IF NOT EXISTS `d03_object_type_properties` (
+CREATE TABLE IF NOT EXISTS `af_d02_properties` (
+  `property_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`property_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `af_d02_type_properties`
+--
+
+CREATE TABLE IF NOT EXISTS `af_d02_type_properties` (
   `type_id` int(11) NOT NULL,
   `property_id` int(11) NOT NULL,
   PRIMARY KEY (`type_id`,`property_id`)
@@ -91,22 +105,10 @@ CREATE TABLE IF NOT EXISTS `d03_object_type_properties` (
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `d03_properties`
+-- Tabellenstruktur für Tabelle `af_d02_user`
 --
 
-CREATE TABLE IF NOT EXISTS `d03_properties` (
-  `property_id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL,
-  PRIMARY KEY (`property_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
-
--- --------------------------------------------------------
-
---
--- Tabellenstruktur für Tabelle `d03_user`
---
-
-CREATE TABLE IF NOT EXISTS `d03_user` (
+CREATE TABLE IF NOT EXISTS `af_d02_user` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `password` varchar(255) NOT NULL,
   `Name` varchar(255) NOT NULL,
@@ -117,15 +119,15 @@ CREATE TABLE IF NOT EXISTS `d03_user` (
   `email` varchar(255) NOT NULL,
   `create_datetime` datetime NOT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1528 ;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `d03_user_app_authorization`
+-- Tabellenstruktur für Tabelle `af_d02_user_applications`
 --
 
-CREATE TABLE IF NOT EXISTS `d03_user_app_authorization` (
+CREATE TABLE IF NOT EXISTS `af_d02_user_applications` (
   `object_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   PRIMARY KEY (`object_id`,`user_id`)
@@ -134,13 +136,13 @@ CREATE TABLE IF NOT EXISTS `d03_user_app_authorization` (
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `d03_user_app_invites`
+-- Tabellenstruktur für Tabelle `af_d02_user_app_invites`
 --
 
-CREATE TABLE IF NOT EXISTS `d03_user_app_invites` (
+CREATE TABLE IF NOT EXISTS `af_d02_user_app_invites` (
   `invite_id` int(11) NOT NULL AUTO_INCREMENT,
   `object_id` int(11) NOT NULL,
-  `user_id` int(11) DEFAULT NULL,
+  `user_id` int(11) NOT NULL,
   `name_invite` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `invite_token` varchar(255) NOT NULL,
@@ -149,4 +151,5 @@ CREATE TABLE IF NOT EXISTS `d03_user_app_invites` (
   `invite_accepted` tinyint(1) NOT NULL,
   `last_visited` datetime NOT NULL,
   PRIMARY KEY (`invite_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=153 ;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+COMMIT;

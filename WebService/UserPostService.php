@@ -4,7 +4,28 @@
     function __construct() {
        
     }
-
+    public function createUserbyDeviceId($DeviceId)
+    {
+    	$return = array();
+    	$return['success'] = dbConnect();
+    	 
+    
+    	$sql = "INSERT INTO
+                    ".UserTab."
+                SET
+                    user_id = '',
+                    DeviceId = '".$DeviceId."',
+                    create_datetime = NOW();";
+    	$result = mysql_query($sql) OR die(mysql_error());
+    
+    	if($result){
+    		$return['success'] = "true";
+    		$return['UserId'] = mysql_insert_id();
+    	}else{
+    		$return['success'] = "false";
+    	}
+    	return $return;
+    }
     public function createUserbyFingerprint($fingerprint)
     {
         $return = array();

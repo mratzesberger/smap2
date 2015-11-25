@@ -81,6 +81,17 @@ function getTypeId($TypeName){
 	return $Type['type_id'];
 }
 // Get Type Id by Name
+function getPropertyIdByName($PropertyName){
+
+	CheckPropertyExists($PropertyName);
+
+	// Get Type Id by Name
+	$propResult = mysql_query("SELECT property_id FROM ".ObjProp." WHERE name = '".$PropertyName."'");
+	$prop = mysql_fetch_array($propResult);
+
+	return $prop['property_id'];
+}
+// Get Type Id by Name
 function getPropertyId($TypeId, $PropertyName){
 
 	CheckPropertyExists($PropertyName);
@@ -111,6 +122,8 @@ function InsertPropertyValue($ObjectId, $PropertyId, $Value, $UserId){
 	(object_id,property_id,create_user_id, create_datetime, value)
 	VALUES ('$ObjectId','$PropertyId','$UserId',NOW(), '$Value')
 			ON DUPLICATE KEY UPDATE change_user_id = '$UserId', change_datetime = NOW(), value='$Value'");
+	
+	return mysql_insert_id();
 }
 // Insert / Update User App Invite
 function InsertUserAppInvite($ObjectId, $UserId){
@@ -373,6 +386,28 @@ function getAppMembers($ObjectId)
 	}
 	mysql_free_result($result);
 	return $array;
+}
+function convertImageOrientation($jpgFile, $orientation) {
+	
+	$image   = imagecreatefromjpeg($jpgFile);
+	 
+	if (!empty($orientation)) {
+		switch ($orientation) {
+			case 3:
+				$image = imagerotate($image, 180, 0);
+				break;
+				 
+			case 6:
+				$image = imagerotate($image, -90, 0);
+				break;
+				 
+			case 8:
+				$image = imagerotate($image, 90, 0);
+				break;
+		}
+	}
+	imagejpeg($image, $image_ret, 90);
+	return $image_ret;
 }
 ?>
 

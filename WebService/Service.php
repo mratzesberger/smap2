@@ -1,4 +1,9 @@
 <?php
+ob_start();
+/* your code here */
+$length = ob_get_length();
+header('Content-Length: '.$length."\r\n");
+header('Accept-Ranges: bytes'."\r\n");
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Allow-Headers: X-Requested-With,Content-Type,Accept,Origin');
@@ -23,4 +28,6 @@ $rest->addServiceClass('UserGet');
 $rest->addServiceClass('UserPost');
 $rest->addServiceClass('UploadPost');
 $rest->handle();
+
+ob_end_flush();
 ?>

@@ -2,7 +2,34 @@
 
 class AppPost {
 	// example: http://path/to/examples/InstanceExample.php?method=sayHello&name=World
+	public function Save($userId) {
+		
+		$JSONdata = array();
+		$JSONdata = $_POST;
+		$return = $JSONdata;
+		$return['success'] = dbConnect();
+		
+		if($return['success'] != 'true'){
+			return $return;
+			exit;
+		}
+	
+		foreach($JSONdata as $key => $value){
+			
+			if(!is_array($value)){
 
+				// Get Property Id for key
+				$return['pid'] = $PropertyId = getPropertyIdByName($key);
+	
+				// Set Property Value for Object
+				InsertPropertyValue($JSONdata['ObjId'], $PropertyId, $value, $userId);
+			
+			}
+		}
+
+		return  $return;
+	
+	}
 	public function CreateApplication($userId) {
 		$return['success'] = dbConnect();
 		
