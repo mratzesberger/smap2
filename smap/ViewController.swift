@@ -15,10 +15,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var test = dbModel()
+        let test = cl_DBModel()
         test.serviceCall()
         
-        alert(self, "test", "test" )
+        alert(self, title: "test", message: "test" )
         
         // Do any additional setup after loading the view, typically from a nib.
     }

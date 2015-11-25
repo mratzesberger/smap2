@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>033B917F-1C16-4B7A-957A-D6F9AAE27A67</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>smap</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>BFC62656D54AB510A62CA65A19FA2BCF57AA6666</key>
 		<string>https://github.com/mratzesberger/smap2.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>smap.xcodeproj/project.xcworkspace</string>
+	<string>smap.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BFC62656D54AB510A62CA65A19FA2BCF57AA6666</key>

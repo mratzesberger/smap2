@@ -1,15 +1,14 @@
 //
-//  userModel.swift
+//  cl_UserModel.swift
 //  smap
 //
-//  Created by Mathias Ratzesberger on 25.01.15.
+//  Created by Mathias Ratzesberger on 17.04.15.
 //  Copyright (c) 2015 Mara-Consulting. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-class userModel {
+class cl_UserModel{
     var DeviceId: String
     var firstName: String = ""
     var lastName: String = ""
@@ -18,11 +17,10 @@ class userModel {
     
     // id init
     init( ) {
-        self.DeviceId = UIDevice.currentDevice().identifierForVendor.UUIDString
+        self.DeviceId = UIDevice.currentDevice().identifierForVendor!.UUIDString
     }
     
     func getDeviceId( ) -> String {
         return self.DeviceId
     }
-    
 }
