@@ -18,68 +18,36 @@ class cl_DBModel{
     // Singleton Instance
     private static let Instance: cl_DBModel = cl_DBModel()
     
-    private var user : cl_UserModel = cl_UserModel()
-    private var servcieURLs = "https://af.ssl-secured-server.de/WebContent/service/TaskService.php?method=GetUserData"
-//    private var servcieURL = "http://af.mara-consulting.de/WebContent/service/Service.php?method=createUserbyDeviceId"
-    private var request : NSMutableURLRequest = NSMutableURLRequest()
-    
     /////////////////////////////////////////////////////////
     // Public Attributes
     /////////////////////////////////////////////////////////
-    
 
     /////////////////////////////////////////////////////////
     // Private Methods
     /////////////////////////////////////////////////////////
-    
+
     /////////////////////////////////////////////////////////
     // Public Methods
     /////////////////////////////////////////////////////////
     
     init() {
-        
+//        self.user  = cl_UserModel()
     }
     
-    func getInstance( ) ->cl_DBModel{
+    static func getInstance( ) ->cl_DBModel{
         return cl_DBModel.Instance
     }
-    
-    func serviceCall( ){
-        request.URL = NSURL(string: self.servcieURLs + "&DeviceId=" + user.DeviceId)
-        request.HTTPMethod = "GET"
-        
-//        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue(), completionHandler:{ (
-//            
-//            response, data, error) -> Void in
-//            guard let data = data else { return }
-//            do{
-//            var res = try NSJSONSerialization.JSONObjectWithData(data, options: []) as! NSDictionary
-////                if (res.) {
-////                    
-////                    if (result["success"]! as! String == "true"){
-////                        // process jsonResult
-//                        print("success")
-////                    } else  {
-////                        
-////                        print("fail")
-////                        
-////                    }
-////                    
-////                    
-////                } else {
-////                    // couldn't load JSON, look at error
-////                    print("error")
-////                }
-//            } catch {
-//                    
-//            }
-////            var jsonResult: NSDictionary!; jsonResult = try! NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers) as? NSDictionary
-//            
-//            
-//        })
-        
-        let url = self.servcieURLs
 
+    
+    /////////////////////////////////////////////////////////
+    // Public Service Methods
+    /////////////////////////////////////////////////////////
+    
+    // Get User Data
+    func getUserData( ){
+        
+        let url = servcieURLs + "GetUserData"
+        
         let parameters:[String : String] = [
             "DeviceId": user.DeviceId,
             "DeviceName": user.DeviceName,
@@ -88,7 +56,7 @@ class cl_DBModel{
             "DeviceSysName": user.DeviceSysName,
             "DeviceSysVersion": user.DeviceSysVersion
         ]
-//        let parameters = [user.DeviceId,user.DeviceName,user.DeviceModel,user.DeviceLocModel,user.DeviceSysName,user.DeviceSysVersion]
+        //        let parameters = [user.DeviceId,user.DeviceName,user.DeviceModel,user.DeviceLocModel,user.DeviceSysName,user.DeviceSysVersion]
         
         Alamofire.request(.POST, url, parameters: parameters, encoding: Alamofire.ParameterEncoding.URL)
             .responseJSON { response in
@@ -99,10 +67,13 @@ class cl_DBModel{
                 else {
                     NSLog("Success: \(url)")
                     var json_res = JSON(response.result.value!)
-                    var test3 = json_res["UserId"].uIntValue
-                    var test5 = json_res["Input"].array
-                    var test4 = json_res["success"].string
-            }
+                    
+                    user.nickName = json_res["UserNick"].stringValue
+                    user.Name = json_res["UserName"].stringValue
+                    user.UserId = json_res["UserId"].intValue
+                }
         }
     }
+    
+
 }

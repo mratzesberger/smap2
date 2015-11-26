@@ -15,9 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let test = cl_DBModel()
-        test.serviceCall()
-        
+        let InstUser = cl_UserModel()
+        InstUser.getUserData()
         alert(self, title: "test", message: "test" )
         
         // Do any additional setup after loading the view, typically from a nib.

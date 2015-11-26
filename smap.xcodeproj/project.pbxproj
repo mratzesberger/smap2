@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2305170C1C070EF300DBFE52 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2305170B1C070EF300DBFE52 /* constants.swift */; };
 		234617461B5EC30D001D8B76 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234617451B5EC30D001D8B76 /* CollectionViewController.swift */; };
 		234617481B5EC546001D8B76 /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234617471B5EC546001D8B76 /* CategoryViewCell.swift */; };
 		234FD6AE1AE10493003DE0A4 /* cl_DBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234FD6AD1AE10493003DE0A4 /* cl_DBModel.swift */; };
@@ -96,6 +97,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2305170B1C070EF300DBFE52 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		234617451B5EC30D001D8B76 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		234617471B5EC546001D8B76 /* CategoryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
 		234FD6AD1AE10493003DE0A4 /* cl_DBModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cl_DBModel.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 		23DF4EFA1A7500380059870C /* data */ = {
 			isa = PBXGroup;
 			children = (
+				2305170B1C070EF300DBFE52 /* constants.swift */,
 				23DF4F131A79001F0059870C /* functions.swift */,
 				234FD6AD1AE10493003DE0A4 /* cl_DBModel.swift */,
 				234FD6AF1AE104AF003DE0A4 /* cl_UserModel.swift */,
@@ -399,6 +402,7 @@
 			files = (
 				234FD6AE1AE10493003DE0A4 /* cl_DBModel.swift in Sources */,
 				23DF4F141A79001F0059870C /* functions.swift in Sources */,
+				2305170C1C070EF300DBFE52 /* constants.swift in Sources */,
 				234617481B5EC546001D8B76 /* CategoryViewCell.swift in Sources */,
 				234FD6B01AE104AF003DE0A4 /* cl_UserModel.swift in Sources */,
 				234FD6B31AE1100C003DE0A4 /* SwiftyJSON.swift in Sources */,
