@@ -1,0 +1,212 @@
+!SESSION 2015-11-26 10:16:16.371 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.php.product -keyring /Users/mathiasratzesberger/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.php.product -keyring /Users/mathiasratzesberger/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jface 2 0 2015-11-26 10:16:58.638
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-11-26 10:16:58.638
+!MESSAGE A conflict occurred for ALT+COMMAND+Q P:
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.handlers.ShowViewHandler@4ebaecb8,
+		[Lorg.eclipse.ui.internal.commands.Parameter;@520b4c69,,true),[Lorg.eclipse.core.commands.Parameterization;@63c5ab93),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.handlers.ShowViewHandler@4ebaecb8,
+		[Lorg.eclipse.ui.internal.commands.Parameter;@520b4c69,,true),[Lorg.eclipse.core.commands.Parameterization;@46837311),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.core.net 1 0 2015-11-26 10:16:58.723
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-11-26 15:55:21.574
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:55:21.574
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:55:21.574
+!MESSAGE Software being installed: Git Team Provider - experimental auto-import (Incubation) 4.1.1.201511131810-r (org.eclipse.egit.ui.importer 4.1.1.201511131810-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:55:21.574
+!MESSAGE Missing requirement: Import framework 0.2.0.v20151123-1229 (org.eclipse.e4.ui.importer 0.2.0.v20151123-1229) requires 'bundle org.eclipse.core.jobs 3.7.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:55:21.574
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:55:21.574
+!MESSAGE From: Git Team Provider - experimental auto-import (Incubation) 4.1.1.201511131810-r (org.eclipse.egit.ui.importer 4.1.1.201511131810-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:55:21.574
+!MESSAGE To: bundle org.eclipse.e4.ui.importer 0.1.0
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-11-26 15:55:21.587
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:55:21.587
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:55:21.587
+!MESSAGE Software being installed: Git Team Provider - experimental auto-import (Incubation) 4.1.1.201511131810-r (org.eclipse.egit.ui.importer 4.1.1.201511131810-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:55:21.587
+!MESSAGE Missing requirement: Import framework 0.2.0.v20151123-1229 (org.eclipse.e4.ui.importer 0.2.0.v20151123-1229) requires 'bundle org.eclipse.core.jobs 3.7.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:55:21.587
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:55:21.587
+!MESSAGE From: Git Team Provider - experimental auto-import (Incubation) 4.1.1.201511131810-r (org.eclipse.egit.ui.importer 4.1.1.201511131810-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:55:21.587
+!MESSAGE To: bundle org.eclipse.e4.ui.importer 0.1.0
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-11-26 15:56:40.109
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:56:40.109
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:56:40.109
+!MESSAGE Software being installed: Eclipse GitHub integration with task focused interface 4.1.0.201509280440-r (org.eclipse.mylyn.github.feature.feature.group 4.1.0.201509280440-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:56:40.109
+!MESSAGE Missing requirement: Mylyn GitHub Connector UI 4.1.0.201509280440-r (org.eclipse.mylyn.github.ui 4.1.0.201509280440-r) requires 'bundle org.eclipse.mylyn.commons.ui [3.7.0,4.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:56:40.109
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:56:40.109
+!MESSAGE From: Eclipse GitHub integration with task focused interface 4.1.0.201509280440-r (org.eclipse.mylyn.github.feature.feature.group 4.1.0.201509280440-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:56:40.109
+!MESSAGE To: org.eclipse.mylyn.github.ui [4.1.0.201509280440-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-11-26 15:56:40.110
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:56:40.110
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:56:40.110
+!MESSAGE Software being installed: Eclipse GitHub integration with task focused interface 4.1.0.201509280440-r (org.eclipse.mylyn.github.feature.feature.group 4.1.0.201509280440-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:56:40.110
+!MESSAGE Missing requirement: Mylyn GitHub Connector UI 4.1.0.201509280440-r (org.eclipse.mylyn.github.ui 4.1.0.201509280440-r) requires 'bundle org.eclipse.mylyn.commons.ui [3.7.0,4.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:56:40.110
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:56:40.110
+!MESSAGE From: Eclipse GitHub integration with task focused interface 4.1.0.201509280440-r (org.eclipse.mylyn.github.feature.feature.group 4.1.0.201509280440-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:56:40.110
+!MESSAGE To: org.eclipse.mylyn.github.ui [4.1.0.201509280440-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-11-26 15:58:52.330
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:58:52.330
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:58:52.330
+!MESSAGE Software being installed: Git Team Provider - experimental auto-import (Incubation) 4.1.1.201511131810-r (org.eclipse.egit.ui.importer 4.1.1.201511131810-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:58:52.330
+!MESSAGE Missing requirement: Import framework 0.2.0.v20151123-1229 (org.eclipse.e4.ui.importer 0.2.0.v20151123-1229) requires 'bundle org.eclipse.core.jobs 3.7.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:58:52.330
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:58:52.330
+!MESSAGE From: Git Team Provider - experimental auto-import (Incubation) 4.1.1.201511131810-r (org.eclipse.egit.ui.importer 4.1.1.201511131810-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:58:52.331
+!MESSAGE To: bundle org.eclipse.e4.ui.importer 0.1.0
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-11-26 15:58:52.332
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:58:52.332
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:58:52.332
+!MESSAGE Software being installed: Git Team Provider - experimental auto-import (Incubation) 4.1.1.201511131810-r (org.eclipse.egit.ui.importer 4.1.1.201511131810-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:58:52.332
+!MESSAGE Missing requirement: Import framework 0.2.0.v20151123-1229 (org.eclipse.e4.ui.importer 0.2.0.v20151123-1229) requires 'bundle org.eclipse.core.jobs 3.7.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:58:52.332
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:58:52.332
+!MESSAGE From: Git Team Provider - experimental auto-import (Incubation) 4.1.1.201511131810-r (org.eclipse.egit.ui.importer 4.1.1.201511131810-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:58:52.332
+!MESSAGE To: bundle org.eclipse.e4.ui.importer 0.1.0
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-11-26 15:59:10.852
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:59:10.852
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:59:10.852
+!MESSAGE Software being installed: Git Team Provider - experimental auto-import (Incubation) 4.1.1.201511131810-r (org.eclipse.egit.ui.importer 4.1.1.201511131810-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:59:10.852
+!MESSAGE Missing requirement: Import framework 0.2.0.v20151123-1229 (org.eclipse.e4.ui.importer 0.2.0.v20151123-1229) requires 'bundle org.eclipse.core.jobs 3.7.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:59:10.852
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:59:10.852
+!MESSAGE From: Git Team Provider - experimental auto-import (Incubation) 4.1.1.201511131810-r (org.eclipse.egit.ui.importer 4.1.1.201511131810-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:59:10.852
+!MESSAGE To: bundle org.eclipse.e4.ui.importer 0.1.0
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-11-26 15:59:10.853
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:59:10.853
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:59:10.853
+!MESSAGE Software being installed: Git Team Provider - experimental auto-import (Incubation) 4.1.1.201511131810-r (org.eclipse.egit.ui.importer 4.1.1.201511131810-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:59:10.853
+!MESSAGE Missing requirement: Import framework 0.2.0.v20151123-1229 (org.eclipse.e4.ui.importer 0.2.0.v20151123-1229) requires 'bundle org.eclipse.core.jobs 3.7.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-11-26 15:59:10.853
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:59:10.853
+!MESSAGE From: Git Team Provider - experimental auto-import (Incubation) 4.1.1.201511131810-r (org.eclipse.egit.ui.importer 4.1.1.201511131810-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 15:59:10.853
+!MESSAGE To: bundle org.eclipse.e4.ui.importer 0.1.0
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-11-26 16:00:13.502
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-11-26 16:00:13.502
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 16:00:13.502
+!MESSAGE Software being installed: Java implementation of Git - optional Http support using Apache httpclient 4.1.2.201511140022 (org.eclipse.jgit.http.apache.feature.group 4.1.2.201511140022)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 16:00:13.502
+!MESSAGE Missing requirement: Apache HttpComponents HttpClient 4.3.6.v201411290715 (org.apache.httpcomponents.httpclient 4.3.6.v201411290715) requires 'package org.apache.commons.codec.binary 1.6.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-11-26 16:00:13.502
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 16:00:13.502
+!MESSAGE From: Java implementation of Git - optional Http support using Apache httpclient 4.1.2.201511140022 (org.eclipse.jgit.http.apache.feature.group 4.1.2.201511140022)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 16:00:13.502
+!MESSAGE To: org.apache.httpcomponents.httpclient [4.3.6.v201411290715]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-11-26 16:00:13.504
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-11-26 16:00:13.504
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 16:00:13.504
+!MESSAGE Software being installed: Java implementation of Git - optional Http support using Apache httpclient 4.1.2.201511140022 (org.eclipse.jgit.http.apache.feature.group 4.1.2.201511140022)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-11-26 16:00:13.504
+!MESSAGE Missing requirement: Apache HttpComponents HttpClient 4.3.6.v201411290715 (org.apache.httpcomponents.httpclient 4.3.6.v201411290715) requires 'package org.apache.commons.codec.binary 1.6.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-11-26 16:00:13.504
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 16:00:13.504
+!MESSAGE From: Java implementation of Git - optional Http support using Apache httpclient 4.1.2.201511140022 (org.eclipse.jgit.http.apache.feature.group 4.1.2.201511140022)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-11-26 16:00:13.504
+!MESSAGE To: org.apache.httpcomponents.httpclient [4.3.6.v201411290715]
+!SESSION 2015-11-27 09:12:48.620 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.php.product -product org.eclipse.epp.package.php.product -keyring /Users/mathiasratzesberger/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.php.product -data /Users/mathiasratzesberger/Documents/smap -product org.eclipse.epp.package.php.product -keyring /Users/mathiasratzesberger/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jface 2 0 2015-11-27 09:12:54.176
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-11-27 09:12:54.176
+!MESSAGE A conflict occurred for ALT+COMMAND+Q P:
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.handlers.ShowViewHandler@73adf5e1,
+		[Lorg.eclipse.ui.internal.commands.Parameter;@21e9c21c,,true),[Lorg.eclipse.core.commands.Parameterization;@79c6cda8),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.handlers.ShowViewHandler@73adf5e1,
+		[Lorg.eclipse.ui.internal.commands.Parameter;@21e9c21c,,true),[Lorg.eclipse.core.commands.Parameterization;@6ae80f0d),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.core.net 1 0 2015-11-27 09:12:54.333
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
