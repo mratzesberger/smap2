@@ -9,7 +9,7 @@
 import UIKit
 
 class cl_UserModel{
-    var UserId: Int = 0
+    var UserId: String = ""
     var DeviceId: String
     var DeviceName: String
     var DeviceModel: String
@@ -32,7 +32,20 @@ class cl_UserModel{
         self.DeviceSysVersion = UIDevice.currentDevice().systemVersion
     }
     
-    func getUserData( ) {
-        self.dbModel.getUserData()
+    func getUserData(callback: ((done: Bool)->Void)?) {
+        self.dbModel.getUserData(){ done in
+            if (done){
+                callback?(done: done)
+            }
+            
+        }
+    }
+    func setUserData(callback: ((done: Bool)->Void)?) {
+        self.dbModel.setUserData(){ done in
+            if (done){
+                callback?(done: done)
+            }
+            
+        }
     }
 }

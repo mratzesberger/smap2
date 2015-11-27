@@ -44,7 +44,7 @@ class cl_DBModel{
     /////////////////////////////////////////////////////////
     
     // Get User Data
-    func getUserData( ){
+    func getUserData(callback: ((done: Bool)->Void)?){
         
         let url = servcieURLs + "GetUserData"
         
@@ -56,7 +56,6 @@ class cl_DBModel{
             "DeviceSysName": user.DeviceSysName,
             "DeviceSysVersion": user.DeviceSysVersion
         ]
-        //        let parameters = [user.DeviceId,user.DeviceName,user.DeviceModel,user.DeviceLocModel,user.DeviceSysName,user.DeviceSysVersion]
         
         Alamofire.request(.POST, url, parameters: parameters, encoding: Alamofire.ParameterEncoding.URL)
             .responseJSON { response in
@@ -70,10 +69,42 @@ class cl_DBModel{
                     
                     user.nickName = json_res["UserNick"].stringValue
                     user.Name = json_res["UserName"].stringValue
-                    user.UserId = json_res["UserId"].intValue
+                    user.UserId = json_res["UserId"].stringValue
                 }
+                callback?(done: true)
         }
     }
-    
+    // Get User Data
+    func setUserData(callback: ((done: Bool)->Void)?){
+        
+        let url = servcieURLs + "SetUserData"
+        
+        let parameters:[String : String] = [
+            "UserId": user.UserId,
+            "UserNick": user.nickName,
+            "UserName": user.Name
+        ]
+        
+        Alamofire.request(.POST, url, parameters: parameters, encoding: Alamofire.ParameterEncoding.URL)
+            .responseJSON { response in
+                if(response.result.isFailure) {
+                    NSLog("Error: \(response.result.value)")
+                    print(response.result.value)
+                    callback?(done: false)
+                }
+                else {
+                    NSLog("Success: \(url)")
+                    var json_res = JSON(response.result.value!)
+                    
+                    if (json_res["success"].stringValue == "true"){
+                         callback?(done: true)
+                    }else{
+                         callback?(done: false)
+                    }
+                   
+                }
+
+        }
+    }
 
 }

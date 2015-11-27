@@ -69,5 +69,31 @@
     	
     	return $return;
     }
+    public function SetUserData()
+    {
+    	$return = array();
+    	$return['success'] = dbConnect();
+    	
+    	$UserId = (int) $_POST['UserId'];
+    	$UserNick = $_POST['UserNick'];
+    	$UserName = $_POST['UserName'];
+	    $sql = "UPDATE
+	        					".TabPrefix.TabUser."
+	    				SET
+	        					UserNick = '".$UserNick."',
+	        					UserName = '".$UserName."',
+	        					DateChange = NOW()
+	        					WHERE UserId = '".$UserId."';";
+	    
+	    $result = mysql_query($sql) OR die(mysql_error());	
+        if($result){
+    		$return['success'] = "true";
+    	}else{
+    		$return['success'] = "false";
+    	}
+    	
+    	return $return;
+    	
+    }
 }
 ?>

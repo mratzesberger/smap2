@@ -8,16 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
 
-    @IBOutlet var dynamicList: UIView!
+    @IBOutlet weak var UserSettingsList: UITableView!
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let UserSettingsCell : UITableViewCell = UserSettingsList.dequeueReusableCellWithIdentifier("1", forIndexPath: indexPath)
+        
+        return UserSettingsCell
+    
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let InstUser = cl_UserModel()
-        InstUser.getUserData()
-        alert(self, title: "test", message: "test" )
+
+        user.getUserData(handleUpdateUserData)
+//        alert(self, title: "test", message: "test" )
+        
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -27,7 +40,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func handleUpdateUserData(done:Bool){
+        if (done){
+//            InputUserNick.text = user.nickName
+        }
+    }
 
 
 }

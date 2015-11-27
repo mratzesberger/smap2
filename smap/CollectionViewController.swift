@@ -8,28 +8,21 @@
 
 import UIKit
 
-class CollectionViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate {
+class CollectionViewController: UIViewController {
 
+    @IBOutlet weak var SettingsButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
+        
+//        let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
+//        SettingsButton.setTitleTextAttributes(attributes, forState: .Normal)
+//        SettingsButton.title = String.fontAwesomeIconWithName(.Github)
+        
         super.viewDidLoad()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
-        
-    }
-    
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 40
-    }
-    
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("category", forIndexPath: indexPath) as! UICollectionViewCell
-        
-        return cell
     }
     
 }
