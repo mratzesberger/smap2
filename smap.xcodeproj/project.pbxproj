@@ -10,6 +10,8 @@
 		2305170C1C070EF300DBFE52 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2305170B1C070EF300DBFE52 /* constants.swift */; };
 		2305171A1C08B2D800DBFE52 /* XLForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230517191C08B2C500DBFE52 /* XLForm.framework */; };
 		2305171C1C08B6AF00DBFE52 /* UserSettingsFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2305171B1C08B6AF00DBFE52 /* UserSettingsFormViewController.swift */; };
+		2305172A1C0904FD00DBFE52 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 230517281C0904FD00DBFE52 /* FontAwesome.ttf */; };
+		2305172B1C0904FD00DBFE52 /* FAIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230517291C0904FD00DBFE52 /* FAIcon.swift */; };
 		234617461B5EC30D001D8B76 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234617451B5EC30D001D8B76 /* CollectionViewController.swift */; };
 		234617481B5EC546001D8B76 /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234617471B5EC546001D8B76 /* CategoryViewCell.swift */; };
 		234FD6AE1AE10493003DE0A4 /* cl_DBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234FD6AD1AE10493003DE0A4 /* cl_DBModel.swift */; };
@@ -110,6 +112,8 @@
 		230517141C08B2C500DBFE52 /* XLForm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XLForm.xcodeproj; path = "XLForm-master/XLForm.xcodeproj"; sourceTree = "<group>"; };
 		2305171B1C08B6AF00DBFE52 /* UserSettingsFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingsFormViewController.swift; sourceTree = "<group>"; };
 		2305171D1C08F61D00DBFE52 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = de; path = de.lproj/Main.storyboard; sourceTree = "<group>"; };
+		230517281C0904FD00DBFE52 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		230517291C0904FD00DBFE52 /* FAIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAIcon.swift; sourceTree = "<group>"; };
 		234617451B5EC30D001D8B76 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		234617471B5EC546001D8B76 /* CategoryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
 		234FD6AD1AE10493003DE0A4 /* cl_DBModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cl_DBModel.swift; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 		234FD6B11AE10FE5003DE0A4 /* external */ = {
 			isa = PBXGroup;
 			children = (
+				230517281C0904FD00DBFE52 /* FontAwesome.ttf */,
+				230517291C0904FD00DBFE52 /* FAIcon.swift */,
 				234FD6B21AE1100C003DE0A4 /* SwiftyJSON.swift */,
 			);
 			name = external;
@@ -413,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23DF4EE01A7444510059870C /* Main.storyboard in Resources */,
+				2305172A1C0904FD00DBFE52 /* FontAwesome.ttf in Resources */,
 				23DF4F071A78351D0059870C /* Localizable.strings in Resources */,
 				23DF4EE51A7444510059870C /* LaunchScreen.xib in Resources */,
 				23DF4EE21A7444510059870C /* Images.xcassets in Resources */,
@@ -436,6 +443,7 @@
 				234FD6AE1AE10493003DE0A4 /* cl_DBModel.swift in Sources */,
 				23DF4F141A79001F0059870C /* functions.swift in Sources */,
 				2305171C1C08B6AF00DBFE52 /* UserSettingsFormViewController.swift in Sources */,
+				2305172B1C0904FD00DBFE52 /* FAIcon.swift in Sources */,
 				2305170C1C070EF300DBFE52 /* constants.swift in Sources */,
 				234617481B5EC546001D8B76 /* CategoryViewCell.swift in Sources */,
 				234FD6B01AE104AF003DE0A4 /* cl_UserModel.swift in Sources */,

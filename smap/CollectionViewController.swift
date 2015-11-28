@@ -10,13 +10,11 @@ import UIKit
 
 class CollectionViewController: UIViewController {
 
-    @IBOutlet weak var SettingsButton: UIBarButtonItem!
+    @IBOutlet var settingsButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         
-//        let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
-//        SettingsButton.setTitleTextAttributes(attributes, forState: .Normal)
-//        SettingsButton.title = String.fontAwesomeIconWithName(.Github)
+        settingsButton.FAIcon = FAType.FACogs
         
         super.viewDidLoad()
     }
