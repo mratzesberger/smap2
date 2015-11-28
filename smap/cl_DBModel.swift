@@ -77,7 +77,7 @@ class cl_DBModel{
     // Get User Data
     func setUserData(callback: ((done: Bool)->Void)?){
         
-        let url = servcieURLs + "SetUserData"
+        let url = servcieURLs + "SetUserData2"
         
         let parameters:[String : String] = [
             "UserId": user.UserId,

@@ -95,5 +95,23 @@
     	return $return;
     	
     }
+    public function SetUserData2()
+    {
+    	$return = array();
+    	
+    	$UserId = (int) $_POST['UserId'];
+    	$UserNick = $_POST['UserNick'];
+    	$UserName = $_POST['UserName'];
+		$result = updateUserData($UserId, "UserNick", $UserNick);
+		$result = updateUserData($UserId, "UserName", $UserName);
+        if($result){
+    		$return['success'] = "true";
+    	}else{
+    		$return['success'] = "false";
+    	}
+    	
+    	return $return;
+    	
+    }
 }
 ?>
