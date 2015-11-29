@@ -44,40 +44,27 @@ class cl_DBModel{
     /////////////////////////////////////////////////////////
     
     // Get User Data
-    func getUserData(callback: ((done: Bool)->Void)?){
+    func getUserData(url:String, parameter:[String : String], callback: ((done: Bool, response:JSON?)->Void)?){
         
-        let url = servcieURLs + "GetUserData"
-        
-        let parameters:[String : String] = [
-            "DeviceId": user.DeviceId,
-            "DeviceName": user.DeviceName,
-            "DeviceModel": user.DeviceModel,
-            "DeviceLocModel": user.DeviceLocModel,
-            "DeviceSysName": user.DeviceSysName,
-            "DeviceSysVersion": user.DeviceSysVersion
-        ]
-        
-        Alamofire.request(.POST, url, parameters: parameters, encoding: Alamofire.ParameterEncoding.URL)
+        Alamofire.request(.POST, url, parameters: parameter, encoding: Alamofire.ParameterEncoding.URL)
             .responseJSON { response in
                 if(response.result.isFailure) {
                     NSLog("Error: \(response.result.value)")
                     print(response.result.value)
+                    callback?(done: true, response: nil)
                 }
                 else {
                     NSLog("Success: \(url)")
                     var json_res = JSON(response.result.value!)
-                    
-                    user.nickName = json_res["UserNick"].stringValue
-                    user.Name = json_res["UserName"].stringValue
-                    user.UserId = json_res["UserId"].stringValue
+                    callback?(done: true, response: json_res)
                 }
-                callback?(done: true)
+                
         }
     }
     // Get User Data
-    func setUserData(callback: ((done: Bool)->Void)?){
+    func setUserData(callback: ((done: Bool, response:JSON?)->Void)?){
         
-        let url = servcieURLs + "SetUserDataFlori"
+        let url = servcieURLs + "SetUserData"
         
         let parameters:[String : String] = [
             "UserId": user.UserId,
@@ -90,16 +77,16 @@ class cl_DBModel{
                 if(response.result.isFailure) {
                     NSLog("Error: \(response.result.value)")
                     print(response.result.value)
-                    callback?(done: false)
+                    callback?(done: false, response: nil)
                 }
                 else {
                     NSLog("Success: \(url)")
                     var json_res = JSON(response.result.value!)
                     
                     if (json_res["success"].stringValue == "true"){
-                         callback?(done: true)
+                        callback?(done: true, response: json_res)
                     }else{
-                         callback?(done: false)
+                        callback?(done: false, response: json_res)
                     }
                    
                 }

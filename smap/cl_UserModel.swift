@@ -33,13 +33,29 @@ class cl_UserModel{
     }
     
     func getUserData(callback: ((done: Bool)->Void)?) {
-        self.dbModel.getUserData(){ done in
-                callback?(done: done)
+        
+        let url = servcieURLs + "GetUserData"
+        
+        let parameters:[String : String] = [
+            "DeviceId": user.DeviceId,
+            "DeviceName": user.DeviceName,
+            "DeviceModel": user.DeviceModel,
+            "DeviceLocModel": user.DeviceLocModel,
+            "DeviceSysName": user.DeviceSysName,
+            "DeviceSysVersion": user.DeviceSysVersion
+        ]
+        
+        self.dbModel.getUserData(url, parameter: parameters){ done, response in
+            
+            user.nickName = response!["UserNick"].stringValue
+            user.Name = response!["UserName"].stringValue
+            user.UserId = response!["UserId"].stringValue
+            callback?(done: done)
             
         }
     }
     func setUserData(callback: ((done: Bool)->Void)?) {
-        self.dbModel.setUserData(){ done in
+        self.dbModel.setUserData(){ done, response in
                 callback?(done: done)
         }
     }

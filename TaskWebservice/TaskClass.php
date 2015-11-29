@@ -69,6 +69,7 @@
     	
     	return $return;
     }
+    /*
     public function SetUserData()
     {
     	$return = array();
@@ -94,8 +95,8 @@
     	
     	return $return;
     	
-    }
-    public function SetUserData2()
+    }*/
+    public function SetUserData()
     {
     	$return = array();
     	
@@ -113,35 +114,6 @@
     	return $return;
     	
     }
-    public function SetUserDataFlori()
-    {
-    	
-      	$return = array();
-    	$return['success'] = dbConnect();
-      	
-      	$UserId = $_POST['UserId'];
-    	$UserName = $_POST['UserName'];
-    	$UserNick = $_POST['UserNick'];
-    	
-    	
-    		$sql = "UPDATE
-        					".TabPrefix.TabUser."
-        					
-    				SET
-        					UserName = '".$UserName."',
-        					UserNick = '".$UserNick."',
-        					DateCreate = NOW()
-        	 WHERE
-                  UserId = '".$UserId."';";
-                  
-        $result = mysql_query($sql) OR die(mysql_error());
-        $return['sql'] = $sql;
-        if($result){
-    		$return['success'] = "true";
-      	}else{
-    		$return['success'] = "false";
-      	}
-      	return $return;
-    }
+
 }
 ?>

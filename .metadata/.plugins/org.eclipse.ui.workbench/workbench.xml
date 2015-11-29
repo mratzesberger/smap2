@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="43" version="2.0">
 <workbenchAdvisor/>
-<window height="1048" maximized="true" width="1902" x="1449" y="-369">
+<window height="974" width="1920" x="1440" y="-375">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -37,13 +37,13 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.php.editor" name="TaskClass.php" partName="TaskClass.php" path="/Users/mathiasratzesberger/Documents/smap/TaskWebservice/TaskClass.php" title="TaskClass.php" tooltip="TaskWebservice/TaskClass.php" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.php.editor" name="TaskClass.php" partName="TaskClass.php" path="/Users/mathiasratzesberger/Documents/smap/TaskWebservice/TaskClass.php" title="TaskClass.php" tooltip="TaskWebservice/TaskClass.php" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaskWebservice/TaskClass.php"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3131" selectionTopPixel="1231"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2870" selectionTopPixel="1114"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.php.editor" name="TaskConstants.php" partName="TaskConstants.php" path="/Users/mathiasratzesberger/Documents/smap/TaskWebservice/TaskConstants.php" title="TaskConstants.php" tooltip="TaskWebservice/TaskConstants.php" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.php.editor" name="TaskConstants.php" partName="TaskConstants.php" path="/Users/mathiasratzesberger/Documents/smap/TaskWebservice/TaskConstants.php" title="TaskConstants.php" tooltip="TaskWebservice/TaskConstants.php" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaskWebservice/TaskConstants.php"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1405" selectionTopPixel="542"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2087" selectionTopPixel="568"/>
 </editor>
 <editor id="org.eclipse.php.editor" name="TaskService.php" partName="TaskService.php" path="/Users/mathiasratzesberger/Documents/smap/TaskWebservice/TaskService.php" title="TaskService.php" tooltip="TaskWebservice/TaskService.php" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaskWebservice/TaskService.php"/>
@@ -51,7 +51,7 @@
 </editor>
 <editor id="org.eclipse.php.editor" name="ServiceConstants.php" partName="ServiceConstants.php" title="ServiceConstants.php" tooltip="/Users/mathiasratzesberger/Documents/smap/old_WebService/PostingsExcample/ServiceConstants.php" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/mathiasratzesberger/Documents/smap/old_WebService/PostingsExcample/ServiceConstants.php"/>
-<editorState selectionHorizontalPixel="0" selectionLength="30" selectionOffset="4116" selectionTopPixel="3292"/>
+<editorState selectionHorizontalPixel="0" selectionLength="30" selectionOffset="4116" selectionTopPixel="2670"/>
 </editor>
 </editors>
 <views>
@@ -204,163 +204,164 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/TaskWebservice/TaskClass.php"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/TaskWebservice/TaskConstants.php"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/TaskWebservice/TaskService.php"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.php.editor" uri="file:/Users/mathiasratzesberger/Documents/smap/old_WebService/PostingsExcample/ServiceConstants.php"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/TaskWebservice/TaskService.php"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/TaskWebservice/TaskConstants.php"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/TaskWebservice/TaskConstants.php"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.php.editor" uri="file:/Users/mathiasratzesberger/Documents/smap/old_WebService/PostingsExcample/ServiceConstants.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/TaskWebservice/TaskClass.php"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.php.editor" uri="file:/Users/mathiasratzesberger/Documents/smap/old_WebService/PostingsExcample/ServiceConstants.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/TaskWebservice/TaskService.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/TaskWebservice/RestServer.php"/>
 </editors>
-<item historyLabel="TaskConstants.php" index="1">
-<position info="not_deleted" x="848" y="39"/>
-</item>
-<item historyLabel="TaskService.php" index="2">
-<position info="not_deleted" x="856" y="0"/>
-</item>
-<item historyLabel="TaskConstants.php" index="1">
-<position info="not_deleted" x="848" y="39"/>
-</item>
-<item historyLabel="TaskClass.php" index="0">
-<position info="not_deleted" x="483" y="0"/>
-</item>
-<item historyLabel="TaskConstants.php" index="1">
-<position info="not_deleted" x="603" y="0"/>
-</item>
-<item historyLabel="TaskService.php" index="2">
-<position info="not_deleted" x="856" y="0"/>
-</item>
-<item historyLabel="TaskClass.php" index="0">
-<position info="not_deleted" x="483" y="0"/>
-</item>
-<item historyLabel="TaskService.php" index="2">
-<position info="not_deleted" x="856" y="0"/>
-</item>
-<item historyLabel="TaskClass.php" index="0">
-<position info="not_deleted" x="483" y="0"/>
-</item>
-<item historyLabel="TaskConstants.php" index="1">
-<position info="not_deleted" x="6" y="0"/>
-</item>
-<item historyLabel="TaskService.php" index="2">
-<position info="not_deleted" x="856" y="0"/>
-</item>
-<item historyLabel="TaskConstants.php" index="1">
-<position info="not_deleted" x="6" y="0"/>
-</item>
-<item historyLabel="TaskClass.php" index="0">
-<position info="not_deleted" x="483" y="0"/>
-</item>
-<item historyLabel="TaskConstants.php" index="1">
-<position info="not_deleted" x="6" y="0"/>
-</item>
-<item historyLabel="TaskService.php" index="2">
-<position info="not_deleted" x="856" y="0"/>
-</item>
-<item historyLabel="TaskClass.php" index="0">
-<position info="not_deleted" x="483" y="0"/>
-</item>
-<item historyLabel="TaskClass.php" index="0">
-<position/>
-</item>
-<item historyLabel="TaskClass.php" index="0">
-<position info="not_deleted" x="2226" y="0"/>
-</item>
-<item historyLabel="ServiceConstants.php" index="3">
-<position info="not_deleted" x="4019" y="130"/>
-</item>
-<item historyLabel="TaskClass.php" index="0">
-<position info="not_deleted" x="2678" y="0"/>
-</item>
-<item historyLabel="ServiceConstants.php" index="3">
-<position info="not_deleted" x="4019" y="130"/>
-</item>
-<item historyLabel="TaskService.php" index="4">
-<position info="not_deleted" x="856" y="0"/>
-</item>
-<item historyLabel="TaskConstants.php" index="5">
+<item historyLabel="TaskConstants.php" index="2">
 <position info="not_deleted" x="6" y="0"/>
 </item>
 <item historyLabel="TaskClass.php" index="0">
 <position info="not_deleted" x="2617" y="0"/>
 </item>
-<item historyLabel="ServiceConstants.php" index="3">
+<item historyLabel="ServiceConstants.php" index="1">
 <position info="not_deleted" x="4116" y="30"/>
 </item>
 <item historyLabel="TaskClass.php" index="0">
 <position info="not_deleted" x="2617" y="0"/>
 </item>
-<item historyLabel="TaskConstants.php" index="6">
+<item historyLabel="TaskConstants.php" index="3">
 <position info="not_deleted" x="1152" y="109"/>
 </item>
 <item historyLabel="TaskClass.php" index="0">
 <position info="not_deleted" x="2202" y="0"/>
 </item>
-<item historyLabel="ServiceConstants.php" index="7">
+<item historyLabel="ServiceConstants.php" index="4">
 <position info="not_deleted" x="4116" y="30"/>
 </item>
 <item historyLabel="TaskClass.php" index="0">
 <position info="not_deleted" x="2385" y="231"/>
 </item>
-<item historyLabel="TaskConstants.php" index="6">
+<item historyLabel="TaskConstants.php" index="3">
 <position info="not_deleted" x="1150" y="0"/>
 </item>
-<item historyLabel="ServiceConstants.php" index="7">
+<item historyLabel="ServiceConstants.php" index="4">
 <position info="not_deleted" x="4116" y="30"/>
 </item>
-<item historyLabel="TaskConstants.php" index="6">
+<item historyLabel="TaskConstants.php" index="3">
 <position/>
 </item>
 <item historyLabel="TaskClass.php" index="0">
 <position info="not_deleted" x="3133" y="0"/>
 </item>
-<item historyLabel="ServiceConstants.php" index="7">
+<item historyLabel="ServiceConstants.php" index="4">
 <position info="not_deleted" x="4116" y="30"/>
 </item>
-<item historyLabel="TaskConstants.php" index="6">
+<item historyLabel="TaskConstants.php" index="3">
 <position info="not_deleted" x="1103" y="48"/>
 </item>
 <item historyLabel="TaskClass.php" index="0">
 <position info="not_deleted" x="3147" y="0"/>
 </item>
-<item historyLabel="ServiceConstants.php" index="7">
+<item historyLabel="ServiceConstants.php" index="4">
 <position info="not_deleted" x="4116" y="30"/>
 </item>
 <item historyLabel="TaskClass.php" index="0">
 <position info="not_deleted" x="3147" y="0"/>
 </item>
-<item historyLabel="ServiceConstants.php" index="7">
+<item historyLabel="ServiceConstants.php" index="4">
 <position info="not_deleted" x="4116" y="30"/>
 </item>
-<item historyLabel="TaskConstants.php" index="6">
+<item historyLabel="TaskConstants.php" index="3">
 <position info="not_deleted" x="1103" y="48"/>
 </item>
 <item historyLabel="TaskClass.php" index="0">
 <position info="not_deleted" x="3147" y="0"/>
 </item>
-<item historyLabel="TaskConstants.php" index="6">
+<item historyLabel="TaskConstants.php" index="3">
 <position info="not_deleted" x="1243" y="0"/>
 </item>
 <item historyLabel="TaskClass.php" index="0">
 <position info="not_deleted" x="2895" y="0"/>
 </item>
-<item historyLabel="TaskConstants.php" index="6">
+<item historyLabel="TaskConstants.php" index="3">
 <position info="not_deleted" x="1243" y="0"/>
 </item>
 <item historyLabel="TaskClass.php" index="0">
 <position info="not_deleted" x="2895" y="0"/>
 </item>
-<item historyLabel="TaskConstants.php" index="6">
+<item historyLabel="TaskConstants.php" index="3">
 <position info="not_deleted" x="1152" y="0"/>
 </item>
 <item historyLabel="TaskClass.php" index="0">
 <position info="not_deleted" x="3131" y="0"/>
 </item>
-<item historyLabel="ServiceConstants.php" index="7">
+<item historyLabel="ServiceConstants.php" index="4">
 <position info="not_deleted" x="4116" y="30"/>
 </item>
-<item active="true" historyLabel="TaskConstants.php" index="6">
+<item historyLabel="TaskConstants.php" index="3">
 <position info="not_deleted" x="1152" y="0"/>
+</item>
+<item historyLabel="TaskClass.php" index="5">
+<position info="not_deleted" x="3139" y="0"/>
+</item>
+<item historyLabel="TaskConstants.php" index="3">
+<position info="not_deleted" x="1456" y="0"/>
+</item>
+<item historyLabel="ServiceConstants.php" index="6">
+<position info="not_deleted" x="4116" y="30"/>
+</item>
+<item historyLabel="TaskConstants.php" index="3">
+<position info="not_deleted" x="2087" y="0"/>
+</item>
+<item historyLabel="TaskClass.php" index="5">
+<position info="not_deleted" x="3139" y="0"/>
+</item>
+<item historyLabel="TaskService.php" index="7">
+<position info="not_deleted" x="856" y="0"/>
+</item>
+<item historyLabel="TaskClass.php" index="5">
+<position/>
+</item>
+<item historyLabel="TaskConstants.php" index="3">
+<position info="not_deleted" x="2087" y="0"/>
+</item>
+<item historyLabel="TaskClass.php" index="5">
+<position/>
+</item>
+<item historyLabel="TaskClass.php" index="5">
+<position info="not_deleted" x="2925" y="0"/>
+</item>
+<item historyLabel="TaskConstants.php" index="3">
+<position info="not_deleted" x="2087" y="0"/>
+</item>
+<item historyLabel="TaskService.php" index="7">
+<position info="not_deleted" x="856" y="0"/>
+</item>
+<item historyLabel="ServiceConstants.php" index="6">
+<position info="not_deleted" x="4116" y="30"/>
+</item>
+<item historyLabel="TaskService.php" index="7">
+<position info="not_deleted" x="856" y="0"/>
+</item>
+<item historyLabel="RestServer.php" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="TaskService.php" index="7">
+<position info="not_deleted" x="856" y="0"/>
+</item>
+<item historyLabel="ServiceConstants.php" index="6">
+<position info="not_deleted" x="4116" y="30"/>
+</item>
+<item historyLabel="TaskClass.php" index="5">
+<position info="not_deleted" x="2933" y="0"/>
+</item>
+<item historyLabel="TaskConstants.php" index="3">
+<position info="not_deleted" x="2087" y="0"/>
+</item>
+<item historyLabel="TaskClass.php" index="5">
+<position info="not_deleted" x="2933" y="0"/>
+</item>
+<item historyLabel="TaskClass.php" index="5">
+<position info="not_deleted" x="2170" y="666"/>
+</item>
+<item active="true" historyLabel="TaskClass.php" index="5">
+<position info="not_deleted" x="74" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -368,12 +369,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="topLeft"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="right"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -381,11 +376,13 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="RestServer.php" tooltip="TaskWebservice/RestServer.php">
+<persistable path="/TaskWebservice/RestServer.php"/>
+</file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.php.editor" name="ServiceConstants.php" tooltip="/Users/mathiasratzesberger/Documents/smap/old_WebService/PostingsExcample/ServiceConstants.php">
 <persistable uri="file:/Users/mathiasratzesberger/Documents/smap/old_WebService/PostingsExcample/ServiceConstants.php"/>
 </file>
@@ -394,9 +391,6 @@
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.php.editor" name="TaskClass.php" tooltip="/Users/mathiasratzesberger/Documents/smap/WebService/TaskClass.php">
 <persistable uri="file:/Users/mathiasratzesberger/Documents/smap/WebService/TaskClass.php"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="RestServer.php" tooltip="TaskWebservice/RestServer.php">
-<persistable path="/TaskWebservice/RestServer.php"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="TaskService.php" tooltip="TaskWebservice/TaskService.php">
 <persistable path="/TaskWebservice/TaskService.php"/>
