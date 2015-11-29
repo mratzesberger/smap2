@@ -34,18 +34,13 @@ class cl_UserModel{
     
     func getUserData(callback: ((done: Bool)->Void)?) {
         self.dbModel.getUserData(){ done in
-            if (done){
                 callback?(done: done)
-            }
             
         }
     }
     func setUserData(callback: ((done: Bool)->Void)?) {
         self.dbModel.setUserData(){ done in
-            if (done){
                 callback?(done: done)
-            }
-            
         }
     }
 }
