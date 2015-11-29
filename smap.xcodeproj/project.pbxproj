@@ -12,7 +12,8 @@
 		2305171C1C08B6AF00DBFE52 /* UserSettingsFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2305171B1C08B6AF00DBFE52 /* UserSettingsFormViewController.swift */; };
 		2305172A1C0904FD00DBFE52 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 230517281C0904FD00DBFE52 /* FontAwesome.ttf */; };
 		2305172B1C0904FD00DBFE52 /* FAIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230517291C0904FD00DBFE52 /* FAIcon.swift */; };
-		234617461B5EC30D001D8B76 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234617451B5EC30D001D8B76 /* CollectionViewController.swift */; };
+		230517391C09F1C100DBFE52 /* TaskFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230517381C09F1C100DBFE52 /* TaskFormViewController.swift */; };
+		234617461B5EC30D001D8B76 /* TasksFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234617451B5EC30D001D8B76 /* TasksFormViewController.swift */; };
 		234617481B5EC546001D8B76 /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234617471B5EC546001D8B76 /* CategoryViewCell.swift */; };
 		234FD6AE1AE10493003DE0A4 /* cl_DBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234FD6AD1AE10493003DE0A4 /* cl_DBModel.swift */; };
 		234FD6B01AE104AF003DE0A4 /* cl_UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234FD6AF1AE104AF003DE0A4 /* cl_UserModel.swift */; };
@@ -111,10 +112,11 @@
 		2305170B1C070EF300DBFE52 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		230517141C08B2C500DBFE52 /* XLForm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XLForm.xcodeproj; path = "XLForm-master/XLForm.xcodeproj"; sourceTree = "<group>"; };
 		2305171B1C08B6AF00DBFE52 /* UserSettingsFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingsFormViewController.swift; sourceTree = "<group>"; };
-		2305171D1C08F61D00DBFE52 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = de; path = de.lproj/Main.storyboard; sourceTree = "<group>"; };
 		230517281C0904FD00DBFE52 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		230517291C0904FD00DBFE52 /* FAIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAIcon.swift; sourceTree = "<group>"; };
-		234617451B5EC30D001D8B76 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		230517371C09E19A00DBFE52 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		230517381C09F1C100DBFE52 /* TaskFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskFormViewController.swift; sourceTree = "<group>"; };
+		234617451B5EC30D001D8B76 /* TasksFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksFormViewController.swift; sourceTree = "<group>"; };
 		234617471B5EC546001D8B76 /* CategoryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
 		234FD6AD1AE10493003DE0A4 /* cl_DBModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cl_DBModel.swift; sourceTree = "<group>"; };
 		234FD6AF1AE104AF003DE0A4 /* cl_UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cl_UserModel.swift; sourceTree = "<group>"; };
@@ -218,7 +220,8 @@
 				23DF4EDA1A7444510059870C /* AppDelegate.swift */,
 				2305171B1C08B6AF00DBFE52 /* UserSettingsFormViewController.swift */,
 				23DF4EDC1A7444510059870C /* ViewController.swift */,
-				234617451B5EC30D001D8B76 /* CollectionViewController.swift */,
+				234617451B5EC30D001D8B76 /* TasksFormViewController.swift */,
+				230517381C09F1C100DBFE52 /* TaskFormViewController.swift */,
 				234617471B5EC546001D8B76 /* CategoryViewCell.swift */,
 				23DF4EDE1A7444510059870C /* Main.storyboard */,
 				23DF4EE11A7444510059870C /* Images.xcassets */,
@@ -448,7 +451,8 @@
 				234617481B5EC546001D8B76 /* CategoryViewCell.swift in Sources */,
 				234FD6B01AE104AF003DE0A4 /* cl_UserModel.swift in Sources */,
 				234FD6B31AE1100C003DE0A4 /* SwiftyJSON.swift in Sources */,
-				234617461B5EC30D001D8B76 /* CollectionViewController.swift in Sources */,
+				234617461B5EC30D001D8B76 /* TasksFormViewController.swift in Sources */,
+				230517391C09F1C100DBFE52 /* TaskFormViewController.swift in Sources */,
 				23DF4EDD1A7444510059870C /* ViewController.swift in Sources */,
 				23DF4EDB1A7444510059870C /* AppDelegate.swift in Sources */,
 			);
@@ -478,7 +482,7 @@
 			children = (
 				23DF4EDF1A7444510059870C /* Base */,
 				23F397741ADC18F300E6780C /* en */,
-				2305171D1C08F61D00DBFE52 /* de */,
+				230517371C09E19A00DBFE52 /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

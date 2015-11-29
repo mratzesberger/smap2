@@ -8,7 +8,7 @@
         <!--Aufgaben-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CollectionViewController" customModule="smap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TasksFormViewController" customModule="smap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -19,20 +19,15 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Aufgaben" id="qxk-za-mvY">
-                        <barButtonItem key="rightBarButtonItem" title="Einstellungen" id="qW2-PW-7vA">
-                            <connections>
-                                <segue destination="d8l-Me-L09" kind="show" id="BNX-4U-bDa"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Aufgaben" id="qxk-za-mvY"/>
                     <connections>
-                        <outlet property="SettingsButton" destination="qW2-PW-7vA" id="kIV-9R-Y9Y"/>
+                        <segue destination="RFk-dd-h8t" kind="show" identifier="TaskSegue" id="KXn-yl-mMD"/>
+                        <segue destination="d8l-Me-L09" kind="show" identifier="SettingsSegue" id="cdT-aM-DFz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="895" y="-1321"/>
+            <point key="canvasLocation" x="905" y="-339"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X1s-NH-HrT">
@@ -47,7 +42,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dQo-U7-DEZ"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Fhb-Ou-zXc"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q4C-2o-otR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -57,7 +52,7 @@
         <!--Einstellungen-->
         <scene sceneID="1dI-kr-3qI">
             <objects>
-                <viewController id="d8l-Me-L09" customClass="ExamplesFormViewController" customModule="smap" sceneMemberID="viewController">
+                <viewController id="d8l-Me-L09" customClass="UserSettingsFormViewController" customModule="smap" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VIR-Cx-cYh"/>
                         <viewControllerLayoutGuide type="bottom" id="fri-go-IOm"/>
@@ -72,7 +67,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7M5-Bg-JqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="927" y="-573"/>
+            <point key="canvasLocation" x="1605" y="-339"/>
+        </scene>
+        <!--Aufgabe-->
+        <scene sceneID="pg4-PC-cwX">
+            <objects>
+                <viewController id="RFk-dd-h8t" customClass="TaskFormViewController" customModule="smap" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oPS-To-mL5"/>
+                        <viewControllerLayoutGuide type="bottom" id="z2j-Om-mp9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EAw-DE-am3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Aufgabe" id="ZSX-lx-InL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LHT-zn-v7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905" y="-1059"/>
         </scene>
     </scenes>
 </document>
