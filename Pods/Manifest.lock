@@ -1,0 +1,20 @@
+PODS:
+  - AXRatingView (1.0.3)
+  - JVFloatLabeledTextField (1.0.2)
+  - XLForm (3.0.2)
+
+DEPENDENCIES:
+  - AXRatingView (= 1.0.3)
+  - JVFloatLabeledTextField (= 1.0.2)
+  - XLForm (from `XLForm-Master/`)
+
+EXTERNAL SOURCES:
+  XLForm:
+    :path: XLForm-Master/
+
+SPEC CHECKSUMS:
+  AXRatingView: ccaadc1bbda99a4b7e1d556059482d2b933a9f4e
+  JVFloatLabeledTextField: 58a3a32cfb800e5b224f676987e7c13abf50a14d
+  XLForm: 7817ce29f3f259186e837bb7309ac7e5b7e9b883
+
+COCOAPODS: 0.39.0

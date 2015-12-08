@@ -32,7 +32,7 @@
         					".TabPrefix.TabUser."
     				SET
         					UserId = '',
-        					DateCreate = NOW();";
+        					DateCreated = NOW();";
         					
         		$result = mysql_query($sql) OR die(mysql_error());	
         		$UserId = mysql_insert_id();									
@@ -48,7 +48,7 @@
         					DeviceLocModel = '".$DeviceLocModel."',
         					DeviceSysName = '".$DeviceSysName."',
         					DeviceSysVersion = '".$DeviceSysVersion."',
-        					DateCreate = NOW();";
+        					DateCreated = NOW();";
         		$resultDevice = mysql_query($sqlDevice) OR die(mysql_error());	
     	}
     	
@@ -60,8 +60,8 @@
             $return['UserNick'] = $User['UserNick'];
     		$return['UserName'] = $User['UserName'];
     		$return['UserGUID'] = $User['UserGUID'];
-    		$return['DateCreate'] = $User['DateCreate'];
-    		$return['DateChange'] = $User['DateChange'];
+    		$return['DateCreated'] = $User['DateCreated'];
+    		$return['DateChanged'] = $User['DateChanged'];
     		//$return['Input'] = $result;
     	}else{
     		$return['success'] = "false";
@@ -101,11 +101,51 @@
     	$return = array();
     	
     	$UserId = (int) $_POST['UserId'];
-    	$UserNick = $_POST['UserNick'];
-    	$UserName = $_POST['UserName'];
-		$result = updateUserData($UserId, "UserNick", $UserNick);
-		$result = updateUserData($UserId, "UserName", $UserName);
+    	
+    	foreach ($_POST['DataCols'] as $key => $value) {
+			$result = updateUserData($UserId, $key, $value);
+		}
         if($result){
+    		$return['success'] = "true";
+    	}else{
+    		$return['success'] = "false";
+    	}
+    	
+    	return $return;
+    	
+    }
+    public function SetProjectData()
+    {
+    	$return = array();
+    	
+    	$UserId = (int) $_POST['UserId'];
+    	$ProjectId = (int) $_POST['ProjectId'];
+    	
+    	foreach ($_POST['DataCols'] as $key => $value) {
+			$result = updateAnyDataU(TabProject, ColProjectId, $ProjectId, $UserId, $key, $value);
+			$return['SQL'][] = $result;
+		}
+        if($result){
+    		$return['success'] = "true";
+    	}else{
+    		$return['success'] = "false";
+    	}
+    	
+    	return $return;
+    	
+    }
+    public function GetProjectData()
+    {
+    	$return = array();
+    	
+    	$UserId = (int) $_POST['UserId'];
+    	
+    	$Projects = getAnyDataU(TabProject, ColUserCre, $UserId, $UserId);
+        While ($row = $Projects->fetch_array()) {
+			$return['Projects'][] = $row;
+		}
+    	
+        if($return){
     		$return['success'] = "true";
     	}else{
     		$return['success'] = "false";

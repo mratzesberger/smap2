@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2305170C1C070EF300DBFE52 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2305170B1C070EF300DBFE52 /* constants.swift */; };
-		2305171A1C08B2D800DBFE52 /* XLForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230517191C08B2C500DBFE52 /* XLForm.framework */; };
 		2305171C1C08B6AF00DBFE52 /* UserSettingsFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2305171B1C08B6AF00DBFE52 /* UserSettingsFormViewController.swift */; };
 		2305172A1C0904FD00DBFE52 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 230517281C0904FD00DBFE52 /* FontAwesome.ttf */; };
 		2305172B1C0904FD00DBFE52 /* FAIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230517291C0904FD00DBFE52 /* FAIcon.swift */; };
@@ -18,6 +17,10 @@
 		234FD6AE1AE10493003DE0A4 /* cl_DBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234FD6AD1AE10493003DE0A4 /* cl_DBModel.swift */; };
 		234FD6B01AE104AF003DE0A4 /* cl_UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234FD6AF1AE104AF003DE0A4 /* cl_UserModel.swift */; };
 		234FD6B31AE1100C003DE0A4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234FD6B21AE1100C003DE0A4 /* SwiftyJSON.swift */; };
+		23C13C8C1C0CFB5B00025BAA /* XLForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230517191C08B2C500DBFE52 /* XLForm.framework */; };
+		23C13C911C0CFB7E00025BAA /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23C2126A1C0483BE00FB50C7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23C13C951C0DCA9000025BAA /* ProjectFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C13C941C0DCA9000025BAA /* ProjectFormViewController.swift */; };
+		23C13C991C0E45F900025BAA /* ProjectOverviewFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C13C981C0E45F900025BAA /* ProjectOverviewFormViewController.swift */; };
 		23C212771C04848A00FB50C7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C2126A1C0483BE00FB50C7 /* Alamofire.framework */; };
 		23DF4EDB1A7444510059870C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DF4EDA1A7444510059870C /* AppDelegate.swift */; };
 		23DF4EDD1A7444510059870C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DF4EDC1A7444510059870C /* ViewController.swift */; };
@@ -27,7 +30,22 @@
 		23DF4EF11A7444510059870C /* smapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DF4EF01A7444510059870C /* smapTests.swift */; };
 		23DF4F071A78351D0059870C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23DF4F091A78351D0059870C /* Localizable.strings */; };
 		23DF4F141A79001F0059870C /* functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DF4F131A79001F0059870C /* functions.swift */; };
+		23E274211C0CE4C0000391A4 /* FloatLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E274201C0CE4C0000391A4 /* FloatLabelExtension.swift */; };
+		23FF25991C16F5D6002A91C1 /* FloatLabeledTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FF25981C16F5D6002A91C1 /* FloatLabeledTextFieldCell.m */; };
+		D432009446B6E21433E34860 /* libPods-smap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BABA495428BC2A0F608E93 /* libPods-smap.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		23C13C8B1C0CFAB400025BAA /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.metal;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# <com.apple.compilers.metal.osx>\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		230517181C08B2C500DBFE52 /* PBXContainerItemProxy */ = {
@@ -36,6 +54,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = E267FD201BE8048900F86B42;
 			remoteInfo = XLForm;
+		};
+		23C13C8E1C0CFB5B00025BAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 230517141C08B2C500DBFE52 /* XLForm.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E267FD1F1BE8048900F86B42;
+			remoteInfo = XLForm;
+		};
+		23C13C921C0CFB7E00025BAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23C2125F1C0483BE00FB50C7 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
 		};
 		23C212691C0483BE00FB50C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -102,6 +134,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				23C13C911C0CFB7E00025BAA /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +142,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18946900AC1EE690117763AA /* Pods-smap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smap/Pods-smap.debug.xcconfig"; sourceTree = "<group>"; };
 		2305170B1C070EF300DBFE52 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		230517141C08B2C500DBFE52 /* XLForm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XLForm.xcodeproj; path = "XLForm-master/XLForm.xcodeproj"; sourceTree = "<group>"; };
 		2305171B1C08B6AF00DBFE52 /* UserSettingsFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingsFormViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +155,8 @@
 		234FD6AD1AE10493003DE0A4 /* cl_DBModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cl_DBModel.swift; sourceTree = "<group>"; };
 		234FD6AF1AE104AF003DE0A4 /* cl_UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cl_UserModel.swift; sourceTree = "<group>"; };
 		234FD6B21AE1100C003DE0A4 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		23C13C941C0DCA9000025BAA /* ProjectFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectFormViewController.swift; sourceTree = "<group>"; };
+		23C13C981C0E45F900025BAA /* ProjectOverviewFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectOverviewFormViewController.swift; sourceTree = "<group>"; };
 		23C2125F1C0483BE00FB50C7 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		23DF4ED51A7444510059870C /* smap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DF4ED91A7444510059870C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,7 +173,13 @@
 		23DF4F111A78EFCF0059870C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		23DF4F121A78EFCF0059870C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		23DF4F131A79001F0059870C /* functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = functions.swift; sourceTree = "<group>"; };
+		23E274201C0CE4C0000391A4 /* FloatLabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelExtension.swift; sourceTree = "<group>"; };
 		23F397741ADC18F300E6780C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		23FF258D1C16E248002A91C1 /* smap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smap-Bridging-Header.h"; sourceTree = "<group>"; };
+		23FF25981C16F5D6002A91C1 /* FloatLabeledTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatLabeledTextFieldCell.m; sourceTree = "<group>"; };
+		23FF259A1C16F5F4002A91C1 /* FloatLabeledTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatLabeledTextFieldCell.h; sourceTree = "<group>"; };
+		B4BABA495428BC2A0F608E93 /* libPods-smap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-smap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39E73F66B371D0F2D1F7161 /* Pods-smap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smap.release.xcconfig"; path = "Pods/Target Support Files/Pods-smap/Pods-smap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +187,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2305171A1C08B2D800DBFE52 /* XLForm.framework in Frameworks */,
+				23C13C8C1C0CFB5B00025BAA /* XLForm.framework in Frameworks */,
 				23C212771C04848A00FB50C7 /* Alamofire.framework in Frameworks */,
+				D432009446B6E21433E34860 /* libPods-smap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +217,10 @@
 				230517281C0904FD00DBFE52 /* FontAwesome.ttf */,
 				230517291C0904FD00DBFE52 /* FAIcon.swift */,
 				234FD6B21AE1100C003DE0A4 /* SwiftyJSON.swift */,
+				23E274201C0CE4C0000391A4 /* FloatLabelExtension.swift */,
+				23FF258D1C16E248002A91C1 /* smap-Bridging-Header.h */,
+				23FF25981C16F5D6002A91C1 /* FloatLabeledTextFieldCell.m */,
+				23FF259A1C16F5F4002A91C1 /* FloatLabeledTextFieldCell.h */,
 			);
 			name = external;
 			sourceTree = "<group>";
@@ -200,6 +247,8 @@
 				23DF4ED71A7444510059870C /* smap */,
 				23DF4EED1A7444510059870C /* smapTests */,
 				23DF4ED61A7444510059870C /* Products */,
+				4CD82E6FEBB3D61B52273D5B /* Pods */,
+				D3C483049546BB30B82F5E98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,6 +270,8 @@
 				2305171B1C08B6AF00DBFE52 /* UserSettingsFormViewController.swift */,
 				23DF4EDC1A7444510059870C /* ViewController.swift */,
 				234617451B5EC30D001D8B76 /* TasksFormViewController.swift */,
+				23C13C941C0DCA9000025BAA /* ProjectFormViewController.swift */,
+				23C13C981C0E45F900025BAA /* ProjectOverviewFormViewController.swift */,
 				230517381C09F1C100DBFE52 /* TaskFormViewController.swift */,
 				234617471B5EC546001D8B76 /* CategoryViewCell.swift */,
 				23DF4EDE1A7444510059870C /* Main.storyboard */,
@@ -268,6 +319,23 @@
 			name = data;
 			sourceTree = "<group>";
 		};
+		4CD82E6FEBB3D61B52273D5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18946900AC1EE690117763AA /* Pods-smap.debug.xcconfig */,
+				E39E73F66B371D0F2D1F7161 /* Pods-smap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3C483049546BB30B82F5E98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4BABA495428BC2A0F608E93 /* libPods-smap.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -275,14 +343,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23DF4EF41A7444510059870C /* Build configuration list for PBXNativeTarget "smap" */;
 			buildPhases = (
+				D2FAA7F3AE160A0228B364E8 /* Check Pods Manifest.lock */,
 				23DF4ED11A7444510059870C /* Sources */,
 				23DF4ED21A7444510059870C /* Frameworks */,
 				23DF4ED31A7444510059870C /* Resources */,
 				234FD6C91AE118F5003DE0A4 /* Embed Frameworks */,
+				59C1B589CCE32F8B82E9F0C9 /* Embed Pods Frameworks */,
+				8FB67DC0D8965FBCF3E44A83 /* Copy Pods Resources */,
 			);
 			buildRules = (
+				23C13C8B1C0CFAB400025BAA /* PBXBuildRule */,
 			);
 			dependencies = (
+				23C13C8F1C0CFB5B00025BAA /* PBXTargetDependency */,
+				23C13C931C0CFB7E00025BAA /* PBXTargetDependency */,
 			);
 			name = smap;
 			productName = smap;
@@ -438,6 +512,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		59C1B589CCE32F8B82E9F0C9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smap/Pods-smap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FB67DC0D8965FBCF3E44A83 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smap/Pods-smap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2FAA7F3AE160A0228B364E8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23DF4ED11A7444510059870C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -449,11 +571,15 @@
 				2305172B1C0904FD00DBFE52 /* FAIcon.swift in Sources */,
 				2305170C1C070EF300DBFE52 /* constants.swift in Sources */,
 				234617481B5EC546001D8B76 /* CategoryViewCell.swift in Sources */,
+				23C13C951C0DCA9000025BAA /* ProjectFormViewController.swift in Sources */,
 				234FD6B01AE104AF003DE0A4 /* cl_UserModel.swift in Sources */,
 				234FD6B31AE1100C003DE0A4 /* SwiftyJSON.swift in Sources */,
 				234617461B5EC30D001D8B76 /* TasksFormViewController.swift in Sources */,
+				23E274211C0CE4C0000391A4 /* FloatLabelExtension.swift in Sources */,
 				230517391C09F1C100DBFE52 /* TaskFormViewController.swift in Sources */,
 				23DF4EDD1A7444510059870C /* ViewController.swift in Sources */,
+				23C13C991C0E45F900025BAA /* ProjectOverviewFormViewController.swift in Sources */,
+				23FF25991C16F5D6002A91C1 /* FloatLabeledTextFieldCell.m in Sources */,
 				23DF4EDB1A7444510059870C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +595,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		23C13C8F1C0CFB5B00025BAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XLForm;
+			targetProxy = 23C13C8E1C0CFB5B00025BAA /* PBXContainerItemProxy */;
+		};
+		23C13C931C0CFB7E00025BAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 23C13C921C0CFB7E00025BAA /* PBXContainerItemProxy */;
+		};
 		23DF4EEC1A7444510059870C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 23DF4ED41A7444510059870C /* smap */;
@@ -584,6 +720,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -591,25 +728,40 @@
 		};
 		23DF4EF51A7444510059870C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18946900AC1EE690117763AA /* Pods-smap.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = smap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mara.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "smap/smap-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		23DF4EF61A7444510059870C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E39E73F66B371D0F2D1F7161 /* Pods-smap.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = smap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "mara.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "smap/smap-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -659,7 +811,7 @@
 				23DF4EF31A7444510059870C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		23DF4EF41A7444510059870C /* Build configuration list for PBXNativeTarget "smap" */ = {
 			isa = XCConfigurationList;
@@ -668,7 +820,7 @@
 				23DF4EF61A7444510059870C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		23DF4EF71A7444510059870C /* Build configuration list for PBXNativeTarget "smapTests" */ = {
 			isa = XCConfigurationList;
@@ -677,7 +829,7 @@
 				23DF4EF91A7444510059870C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

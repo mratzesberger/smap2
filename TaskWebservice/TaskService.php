@@ -14,6 +14,9 @@ header('Content-Type: application/jsonp');
 // http://inpremium.mara-consulting.de/ConfigApp/WebContent/service/Service.php?method=checkLogin&email=mathias.ratzesberger@gmx.de&pass=h4c3pohcd
 require_once "RestServer.php";
 include "TaskConstants.php";
+include "TaskUpdateFunctions.php";
+include "TaskGetFunctions.php";
+include "TaskInsertFunctions.php";
 include "TaskClass.php";
 // error_reporting (E_ALL | E_STRICT);
 // ini_set ('display_errors' , 1);

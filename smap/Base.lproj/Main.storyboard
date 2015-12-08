@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--Aufgaben-->
+        <!--Übersicht/Projekte-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TasksFormViewController" customModule="smap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ProjectOverviewFormViewController" customModule="smap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -19,10 +19,11 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Aufgaben" id="qxk-za-mvY"/>
+                    <navigationItem key="navigationItem" title="Übersicht/Projekte" id="qxk-za-mvY"/>
                     <connections>
                         <segue destination="RFk-dd-h8t" kind="show" identifier="TaskSegue" id="KXn-yl-mMD"/>
                         <segue destination="d8l-Me-L09" kind="show" identifier="SettingsSegue" id="cdT-aM-DFz"/>
+                        <segue destination="0Cv-nW-yOB" kind="show" identifier="ProjectSegue" id="lwn-jH-Efl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -87,7 +88,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LHT-zn-v7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="905" y="-1059"/>
+            <point key="canvasLocation" x="1605" y="-1015"/>
+        </scene>
+        <!--Projekt-->
+        <scene sceneID="08h-Hn-72X">
+            <objects>
+                <viewController id="0Cv-nW-yOB" customClass="ProjectFormViewController" customModule="smap" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xph-ee-8CL"/>
+                        <viewControllerLayoutGuide type="bottom" id="I7c-xQ-5Cl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LeP-UX-C9k">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Projekt" id="IYe-7I-bcW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ui-gu-ELl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905" y="-1057"/>
         </scene>
     </scenes>
 </document>

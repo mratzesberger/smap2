@@ -29,22 +29,21 @@ class UserSettingsFormViewController : XLFormViewController {
         var section : XLFormSectionDescriptor
         var row : XLFormRowDescriptor
         
-        form = XLFormDescriptor(title: "Einstellungen")
+        form = XLFormDescriptor(title: "Benutzerdaten")
 //        form.assignFirstResponderOnShow = true
         form.disabled = true
         
         section = XLFormSectionDescriptor.formSectionWithTitle("Benutzerdaten")
-        section.footerTitle = "Bitte Benutzereinstellungen pflegen"
+//        section.footerTitle = "Benutzerdaten"
         form.addFormSection(section)
         
-        
-        // Name
-        row = XLFormRowDescriptor(tag: Tags.Nick, rowType: XLFormRowDescriptorTypeText, title: "Nick")
-        row.required = true
+        // Nick
+        row = XLFormRowDescriptor(tag: Tags.Nick, rowType: XLFormRowDescriptorTypeName, title: "Nick")
+//        row.required = true
         section.addFormRow(row)
         
         // Name
-        row = XLFormRowDescriptor(tag: Tags.Name, rowType: XLFormRowDescriptorTypeEmail, title: "Name")
+        row = XLFormRowDescriptor(tag: Tags.Name, rowType: XLFormRowDescriptorTypeName, title: "Name")
         section.addFormRow(row)
         
 //        // Date
@@ -116,8 +115,20 @@ class UserSettingsFormViewController : XLFormViewController {
     {
         let validationErrors : Array<NSError> = self.formValidationErrors() as! Array<NSError>
         if (validationErrors.count > 0){
-            self.showFormValidationError(validationErrors.first)
-            return
+//            self.showFormValidationError(validationErrors.first)
+//            return
+            let alertController = UIAlertController(title: "Fehler", message: "Bitte füllen Sie alle Mussfelder.", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            self.presentViewController(alertController, animated: true) {
+                
+            }
+            dispatch_async(dispatch_get_main_queue()) { () -> Void in
+                
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(1.5 * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), { () -> Void in
+                    alertController.dismissViewControllerAnimated(true, completion: nil)
+                })
+            }
+
         }else{
             user.Name = ((self.form.formRowWithTag(Tags.Name)!.value) as? String)!
             user.nickName = ((self.form.formRowWithTag(Tags.Nick)!.value) as? String)!

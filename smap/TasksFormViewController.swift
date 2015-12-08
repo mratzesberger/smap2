@@ -28,15 +28,27 @@ class TasksFormViewController : XLFormViewController {
         let form : XLFormDescriptor
         var section : XLFormSectionDescriptor
         var row: XLFormRowDescriptor
+        var label: UILabel
+        
+        label = UILabel()
+        label.FAIcon = FAType.FACogs
+        
         
         form = XLFormDescriptor()
-        
         section = XLFormSectionDescriptor.formSectionWithTitle("Aufgaben")
         form.addFormSection(section)
         
         // NativeEventFormViewController
-        row = XLFormRowDescriptor(tag: Tags.Task, rowType: XLFormRowDescriptorTypeButton, title: "Test Aufgabe 1")
+        row = XLFormRowDescriptor(tag: Tags.Task, rowType: XLFormRowDescriptorTypeButton, title: "Test Aufgabe 1Do any additional setup after loading the view, typically from a nib.")
+        row.cellStyle = UITableViewCellStyle.Subtitle
         row.action.formSegueIdenfifier = "TaskSegue"
+//        row.cellConfig["detailTextLabel.text"] = "test 1235"
+//        row.cellConfig["detailTextLabel.color"] = UIColor.grayColor()
+//        row.cellConfig["detailTextLabel.font"] = UIFont.systemFontOfSize(10)
+//        row.selectorOptions = ["Apple", "Orange", "Pear"]
+//        row.value = "Pear"
+//        row.cellConfig["textLabel.font"] = label.font
+//        row.cellConfig["textLabel.text"] = label.text
         section.addFormRow(row)
         
         section = XLFormSectionDescriptor.formSectionWithTitle("This form is actually an example")
@@ -45,7 +57,10 @@ class TasksFormViewController : XLFormViewController {
         
         self.form = form
     }
-    
+//    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        // change cell height
+//            return 60.0
+//    }
     override func viewDidLoad()
     {
         super.viewDidLoad()

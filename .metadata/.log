@@ -272,3 +272,37 @@ Binding(ALT+COMMAND+Q P,
 
 !ENTRY org.eclipse.core.net 1 0 2015-11-29 13:46:48.711
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2015-11-30 10:49:46.899 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.php.product -keyring /Users/mathiasratzesberger/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.php.product -keyring /Users/mathiasratzesberger/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jface 2 0 2015-11-30 10:49:51.983
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-11-30 10:49:51.983
+!MESSAGE A conflict occurred for ALT+COMMAND+Q P:
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.handlers.ShowViewHandler@de96c95,
+		[Lorg.eclipse.ui.internal.commands.Parameter;@57d7b155,,true),[Lorg.eclipse.core.commands.Parameterization;@11bb7081),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.handlers.ShowViewHandler@de96c95,
+		[Lorg.eclipse.ui.internal.commands.Parameter;@57d7b155,,true),[Lorg.eclipse.core.commands.Parameterization;@28d72e3f),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.core.net 1 0 2015-11-30 10:49:52.166
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.epp.usagedata.recording 1 0 2015-12-01 12:24:40.530
+!MESSAGE Usage data upload to http://udc.eclipse.org/upload.php failed with error code 404.

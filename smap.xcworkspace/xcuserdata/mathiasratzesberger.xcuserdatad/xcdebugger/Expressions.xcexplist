@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "cl_DBModel.(getUserData(cl_DBModel) -&gt; (String, parameter : [String : AnyObject], callback : (done : Bool, response : JSON?) -&gt; ()?) -&gt; ()).(closure #1):cl_DBModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ProjectFormViewController.initializeForm(Bool) -&gt; ():ProjectFormViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ProjectOverviewFormViewController.prepareForSegue(UIStoryboardSegue, sender : AnyObject?) -&gt; ():ProjectOverviewFormViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ProjectOverviewFormViewController.tableView(UITableView, didSelectRowAtIndexPath : NSIndexPath) -&gt; ():ProjectOverviewFormViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
